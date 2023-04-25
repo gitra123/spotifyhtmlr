@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobre.css">
+    <style>
+        body{
+            background: url("background2.png")
+        }
+    </style>
+    <title>Spotify sobre</title>
+</head>
+<body>
+    
+    <header class="cabeçalho">
+        <a href="index.html">
+            <img class="cabeçalho-logo" src="spotifylogo.png" alt="logotipo-spotify">
+        </a>
+        
+        <div class="cabeçalho-txt">
+            <a class="cabeçalho-text" href="index.html">Inicio</a>
+            <a class="cabeçalho-text" href="inicio.html">Musicas</a>
+            <a class="cabeçalho-text" href="sobre.html">Sobre</a>
+        </div>
+
+    </header>
+    <fieldset id="about">
+        <legend>os desenvolvedores</legend>
+        Desenvolvedor: Spotify AB<br><br>
+        
+Plataforma: Microsoft Windows, Mac OS X, GNU/Linux (.deb),[1] iOS, Android, Palm, Windows Phone, Symbian OS, PlayStation 3, Playstation 4,
+Playstation 5 e Xbox One<br><br>
+
+Lançamento: 7 de outubro de 2008 <p class="year">(xx anos)</p><br><br>
+Versão estável: 8.6.98.900 (17 de janeiro de 2022)<br><br>
+Versão em teste: [+/-]<br><br>
+Idioma(s): Inglês, alemão, dinamarquês, espanhol, finlandês, francês, holandes, italiano, japonês, polonês, português, sueco<br><br>
+Escrito em: Primeiramente Python com alguns componentes em Java, C e C++<br><br>
+Sistema operativo: Android, iOS, Windows, macOS e Linux<br><br>
+Método de atualização: Download digital<br><br>
+Gênero(s):
+Streaming
+Licença: Proprietário<br><br>
+Estado do desenvolvimento: Ativo<br><br>
+Página oficial
+:<a href="https://spotify.com/br">spotify</a>
+    </fieldset>
+     <script>
+         var yer = document.querySelector(".year")
+         var date = new Date()
+         var year = date.getFullYear()
+         
+         yer.innerText = yer.innerText.replace("xx", year-1-2008)
+     </script>
+
+</body>
+</html>
